@@ -1,25 +1,29 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="tr">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <head>
-    <title>Örnek Web Sitesi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            
         }
 
         header {
-            /*background: linear-gradient(to top, #c6d0f4 , rgb(183, 239, 255));*/
             background: linear-gradient(to top, #F8F8F8, rgb(183, 239, 255));
             color: #000000;
-            padding: 2px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: color-mix(in srgb, color percentage, color percentage);
             left: 0;
             top: 0;
-            
         }
 
         #container {
@@ -38,7 +42,6 @@
             background-color: #2D2E32;
             width: 50%;
             padding: 20px;
-            
         }
 
         #container2 {
@@ -54,7 +57,6 @@
         }
 
         #right2 {
-
             background-color: #f8f8f8;
             width: 30%;
             padding: 20px;
@@ -67,30 +69,137 @@
             height: 100%;
             border: none;
         }
+
+        .tr {
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* Added CSS */
+        #header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            margin-right: 10px; /* Adjust the margin as per your preference */
+        }
+
+        .tr {
+            margin: 0;
+        }
+
+        /*footer*/
+
+
+         footer {
+             background-color: #2D2E32;
+             color: #ffffff;
+             padding: 20px;
+         }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1 1 300px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footer-column p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #ffffff;
+            margin-top: 20px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+
+
     </style>
 </head>
-<body>
-    <header>
-        <h1 style="margin-left: 50px;">INCI REKLAM LTD.</h1>
-    </header>
-    <div id="container2" style="height: 850px;">
-        <div id="left2">
+<body class="turkish">
+<header>
+    <div id="header-content" style="margin-left: 30px; padding-top: 6px;">
+        <h1>INCI REKLAM LTD.</h1>
+        <span class="tr" style="padding-left: 1080px;">Kuzey Kıbrıs'ın incisi..</span>
+    </div>
+</header>
+<div id="container2" style="height: 850px;">
+    <div id="left2">
+        <iframe src='https://my.spline.design/wishyouabloblyday-3b88ed1c5faa8a5cd76a34a1bc6326e8/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    <div id="right2">
+        <h2 style="margin-top: 200px;">HOSGELDIN!</h2>
+    </div>
+</div>
+<div id="container" style="height: 700px;">
+    <div id="left">
+        <h2>Merhaba!</h2>
+    </div>
+    <div id="right">
+        <iframe src='https://my.spline.design/untitled-ae45cf91cf0509adcf44b775b6299abe/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+</div>
 
-            <iframe src='https://my.spline.design/wishyouabloblyday-3b88ed1c5faa8a5cd76a34a1bc6326e8/' frameborder='0' width='100%' height='100%'></iframe>
-
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mauris risus. Fusce volutpat elit non justo iaculis lobortis.</p>
         </div>
-        <div id="right2" >
-            <h2 style=" margin-top: 200px; ">HOSGELDIN!</h2>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: info@increklamltd.com</p>
+            <p>Phone: +90(392)366-01-66</p>
+            <p>Address: 123, Example Street, City, Country</p>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
         </div>
     </div>
-    <div id="container" style="height: 700px; ">
-        <div id="left">
-            <h2>Merhaba!</h2>
-        </div>
-        <div id="right" >
-            <iframe src='https://my.spline.design/untitled-ae45cf91cf0509adcf44b775b6299abe/' frameborder='0' width='100%' height='100%'></iframe>
-        </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 INCI REKLAM LTD. All rights reserved.</p>
     </div>
+</footer>
+
 
 </body>
 </html>
